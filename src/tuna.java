@@ -1,9 +1,14 @@
 
 public class tuna {
+	private String name;
+	private potpie birthday;
 
-	public void simpleMessage() {
-		System.out.println("This is another class");
-		
+	public tuna(String theName, potpie theDate) {
+		name = theName;
+		birthday = theDate;
 	}
 
+	public String toString() {
+		return String.format("My name is %s, my birthday is %s", name, birthday);
+	}
 }
